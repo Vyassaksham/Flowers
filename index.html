@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kk</title>
+    <style>
+        body {
+            background: linear-gradient(to top, #010329, #000005);
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .centered-div {
+            width: 500px;
+            /* Height removed to allow dynamic adjustment based on button */
+            background: linear-gradient(to top, #0d0f3f, #00001d); /* Matching background */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            color: #d3d3d3;  /* Changed text color to #D3D3D3 */
+            font-size: 22px; /* Increased font size */
+            text-align: center;
+        }
+
+        .button-container {
+            width: 100%; /* Make button container full width */
+            display: flex;
+            justify-content: center; /* Center the button */
+            align-items: center; /* Center vertically if needed */
+        }
+
+        .btn {
+            padding: 15px 30px; /* Increased button padding */
+            background: linear-gradient(to top, #0d0f3f, #00001d); /* Matching button background */
+            border: 1px solid #ffffff33; /* Semi-transparent white border */
+            border-radius: 5px;
+            color: white;
+            font-size: 18px; /* Increased button font size */
+            cursor: pointer;
+            outline: none;
+            transition: background .3s ease;
+            text-align: center; /* Center text */
+        }
+
+        .btn:hover {
+            background: linear-gradient(to top, #1a1f60, #0d0f3f); /* Slightly lighter background on hover */
+        }
+
+        .button-text {
+            display: block; /* Ensures the text behaves like a block element */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="centered-div">
+        <div class="button-container">
+            <button class="btn" onclick="showConfirmation()">
+                <span class="button-text">Hey since u told me about flowers💐</span>
+                <span class="button-text">So here are some flowers for my anthophile💖💞</span>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
